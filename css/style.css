@@ -6,11 +6,48 @@ body{
 }
 
 .container{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50% , -50%);
+}
+
+.calculator{
     background-color: seagreen;
     padding: 10px;
     border-radius: 10px;
-    box-shadow: 0 0 5px;
+    box-shadow: 0 0 10px;
     position: relative;
+    /*width: 100px;
+    height: 100px;
+    margin: 50px;*/
+}
+
+.calculator::before{
+    content: '';
+    display: inline-block;
+    background: seagreen;
+    width: 257px;
+    height: 26px;
+    transform: skewX(-40deg);
+    position: absolute;
+    top: -22px;
+    left: 11px;
+    border-radius: 5px;
+}
+
+.calculator::after{
+        content: '';
+        display: inline-block;
+        background: seagreen;
+        width: 18px;
+        height: 368px;
+        transform: skewY(-50deg);
+        position: absolute;
+        top: -12px;
+        left: 99%;
+        border-radius: 5px;
+        box-shadow: 8px 8px 10px;
 }
 
 
