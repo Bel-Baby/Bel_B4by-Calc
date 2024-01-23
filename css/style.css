@@ -1,0 +1,50 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100dvh;
+}
+
+.container{
+    background-color: seagreen;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 5px;
+    position: relative;
+}
+
+
+.display{
+    height: 45px;
+    text-align: right;
+    padding: 10px;
+    margin: 3px 1px 10px;
+    border: 1px #8a8a8a;
+    border-radius: 15px;
+    outline: none;
+    font-size: large;
+    background-color:darkgray;
+    box-shadow: inset 0 0 5px;
+}
+
+.buttons{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 10px;   
+}
+
+.equals{
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+button{
+    border: 1px solid #8a8a8a;
+    border-radius: 20%;
+    outline: none;
+    font-size: large;
+}
+
+button:hover{
+    background-color: palegreen;
+}
